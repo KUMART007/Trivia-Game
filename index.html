@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="countdown"></div>
+
+
+
+
+    <div id="container"></div>
+
+
+
+    <div id="countdown"></div>
+
+
+    <div class=container>
+    </div>
+    <div class="container jumbotron text-center">
+      <h1 class="mb-5">Game title</h1>
+
+      <!-- Interval Demo -->
+      <!-- Go to the last script tag -->
+
+      <!DOCTYPE html>
+
+      <html lang="en-us">
+
+
+      <head>
+
+        <meta charset="UTF-8">
+        <title>Document</title>
+
+      </head>
+
+      <body>
+
+        <div id="show-number"></div>
+
+        <br>
+
+        <button id="stop">Stop</button>
+        <button id="resume">play Game</button>
+        <button class="btn btn-primary" id="start">Start Game</button>
+
+
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Script -->
+        <script type="text/javascript">
+
+
+          var number = 30;
+
+
+          var intervalId;
+
+
+          $("#stop").on("click", stop);
+
+
+          $("#resume").on("click", run);
+
+
+          function run() {
+            clearInterval(intervalId);
+            intervalId = setInterval(decrement, 1000);
+          }
+
+
+          function decrement() {
+
+
+            number--;
+
+            $("#show-number").html("<h2>" + number + "</h2>");
+
+
+
+            if (number === 0) {
+
+              //  ...run the stop function.
+              stop(); (0)
+
+              //  Alert the user that time is up.
+              alert("Time Up!");
+              alert("Gameover (try again)");
+            }
+          }
+
+          //  The stop function
+          function stop() {
+
+            //  Clears our intervalId
+            //  We just pass the name of the interval
+            //  to the clearInterval function.
+            clearInterval(intervalId);
+          }
+
+          //  Execute the run function.
+          run();
+
+        </script>
+
+      </body>
+
+      </html>
+      <h2>Time Remaining</h2><br>
+
+
+      <h3>What was the first full length CGI movies?</h3>
+      <select id="JOHNSON" class="selectpicker"></select>
+      <select id="olathe" class="selectpicker"></select>
+
+
+      <h3>which of these is Not a name of one of the Spice Girls?</h3><br>
+      <select id="JOHNSON" class="selectpicker"></select>
+      <select id="olathe" class="selectpicker"></select>
+
+
+      <br>
+      <h2>which NBA team won the most titiles in the 90s?</h2>
+      <select id="JOHNSON" class="selectpicker"></select>
+      <select id="olathe" class="selectpicker"></select>
+    </div>
+
+
+
+    <script src="assets/javascript/app.js"></script>
+   
+
+
+
+</body>
+
+
+</html>
